@@ -231,6 +231,11 @@
       background: linear-gradient(135deg, var(--purple-accent), var(--primary));
     }
 
+    .link-btn.learning {
+      background: linear-gradient(135deg, #1d4ed8, #0f2d6b);
+      border: 1px solid var(--gold);
+    }
+
     /* Card Styling */
     .card {
       background: var(--card-bg);
@@ -340,9 +345,8 @@
       padding: 22px 20px;
       border-radius: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-      border-left: 4px solid var(--gold);
       border: 1px solid #e5e7eb;
-      border-left-width: 4px;
+      border-left: 4px solid var(--gold);
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -362,7 +366,7 @@
 
     /* FEATURED (DOUBLE-SIZE) CARD: Super Tuesday */
     .program-item.featured-tuesday {
-      grid-column: 1 / -1; /* Spans both columns */
+      grid-column: 1 / -1;
       background: linear-gradient(135deg, #ffffff 0%, #fbf9f2 100%);
       border: 2px solid var(--gold);
       border-left: 6px solid var(--gold);
@@ -396,7 +400,7 @@
 
     /* FEATURED PARTNER CARD: Yeshiva Etzion */
     .program-item.featured-yeshiva {
-      grid-column: 1 / -1; /* Spans both columns */
+      grid-column: 1 / -1;
       background: linear-gradient(135deg, #f0f4fa 0%, #ffffff 100%);
       border: 2px solid var(--primary-light);
       border-left: 6px solid var(--primary);
@@ -702,22 +706,32 @@
       <div class="gold-divider"></div>
 
       <div class="links-grid">
+        <!-- WhatsApp Chat Link -->
         <a href="https://chat.whatsapp.com/HV8h88vksn93OyQEB6rb7D" class="link-btn whatsapp" target="_blank" rel="noopener">
           💬 Join the BJCB WhatsApp Chat
         </a>
 
+        <!-- Pay Pledges Link (Square) -->
         <a href="https://square.link/u/L8ltjX1c?src=webqr" class="link-btn pledges" target="_blank" rel="noopener">
           💳 Pay Your BJCB Pledges
         </a>
 
+        <!-- Z'manim Link (TinyURL) -->
         <a href="https://tinyurl.com/roy11435" class="link-btn zmanim" target="_blank" rel="noopener">
           🕒 Z'manim for Briarwood (זמני יוסף)
         </a>
 
-        <a href="https://www.flipbookpdf.net/web/site/6aad0fb91a83e8c0d8f3ed88423a9d6bc5cf12d1202608.pdf.html" class="link-btn" target="_blank" rel="noopener">
-          📖 View 5787 (2026–2027) Jewish Calendar Online
+        <!-- NEW: Learn to Read Musifim Link -->
+        <a href="https://bjcb-mus.silverstudio.workers.dev" class="link-btn learning" target="_blank" rel="noopener">
+          📖 Learn to Read Musifim
         </a>
 
+        <!-- Interactive Flipbook PDF Link -->
+        <a href="https://www.flipbookpdf.net/web/site/6aad0fb91a83e8c0d8f3ed88423a9d6bc5cf12d1202608.pdf.html" class="link-btn" target="_blank" rel="noopener">
+          📅 View 5787 (2026–2027) Jewish Calendar Online
+        </a>
+
+        <!-- Google Maps Link -->
         <a href="https://share.google/fmpdlvwnxKHXn6KTg" class="link-btn" target="_blank" rel="noopener">
           📍 Directions & Google Maps
         </a>
@@ -762,7 +776,7 @@
       </div>
     </section>
 
-    <!-- 3. WEEKLY LEARNING & PROGRAMS (UPDATED & EXPANDED) -->
+    <!-- 3. WEEKLY LEARNING & PROGRAMS -->
     <section id="programs">
       <h2 class="section-title">Torah Learning & Community Programs</h2>
       <p class="section-subtitle">Discover our active schedule of learning, youth programs, and community life.</p>
@@ -770,7 +784,7 @@
 
       <div class="programs-grid">
         
-        <!-- 1. FEATURED SUPER TUESDAY (2x SIZE / FULL WIDTH) -->
+        <!-- FEATURED SUPER TUESDAY -->
         <div class="program-item featured-tuesday">
           <div class="featured-badge">Featured Program</div>
           <h3>🌟 "Super Tuesday" Night Chavruta & Shiurim</h3>
@@ -779,7 +793,7 @@
           </p>
         </div>
 
-        <!-- 2. Sunday Gemara Class -->
+        <!-- Sunday Gemara Class -->
         <div class="program-item">
           <h3>📚 Weekly Sunday Gemara Class</h3>
           <p>
@@ -787,7 +801,7 @@
           </p>
         </div>
 
-        <!-- 3. Seasonal Shabbat Learning (Winter vs Summer) -->
+        <!-- Seasonal Shabbat Learning -->
         <div class="program-item">
           <h3>🕯️ Shabbat Learning Program</h3>
           <p>
@@ -796,7 +810,7 @@
           </p>
         </div>
 
-        <!-- 4. Weekly Saturday Children's Program -->
+        <!-- Weekly Saturday Children's Program -->
         <div class="program-item">
           <h3>🧸 Shabbat Morning Children's Program</h3>
           <p>
@@ -804,7 +818,7 @@
           </p>
         </div>
 
-        <!-- 5. Father & Children (Avot U'Banim) -->
+        <!-- Father & Children -->
         <div class="program-item">
           <h3>👨‍👦 Father & Children (אבות ובנים)</h3>
           <p>
@@ -812,7 +826,7 @@
           </p>
         </div>
 
-        <!-- 6. Women's Events & Challah Baking -->
+        <!-- Women's Events & Challah Baking -->
         <div class="program-item">
           <h3>🌸 Women's Events & Challah Baking</h3>
           <p>
@@ -820,7 +834,7 @@
           </p>
         </div>
 
-        <!-- 7. Holiday Celebrations & Siyumim -->
+        <!-- Holiday Celebrations & Siyumim -->
         <div class="program-item">
           <h3>🎉 Holiday Celebrations & Siyumim</h3>
           <p>
@@ -828,7 +842,7 @@
           </p>
         </div>
 
-        <!-- 8. FEATURED: Yeshiva Etzion in our Building -->
+        <!-- Yeshiva Etzion -->
         <div class="program-item featured-yeshiva">
           <div class="featured-badge" style="background: var(--primary);">Housed Inside BJCB</div>
           <h3>📖 Yeshiva Etzion</h3>
